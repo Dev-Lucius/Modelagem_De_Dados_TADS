@@ -31,6 +31,9 @@ CREATE TABLE pedidos_itens(
     valor_unitario NUMERIC(10, 2) NOT NULL
 );
 
+-- Adicionando uma nova Coluna na Tabela produtos
+ALTER TABLE produtos ADD COLUMN categoria VARCHAR(100) DEFAULT 'Diversos';
+
 -- DQL — Selecionar pedidos entre duas datas
 SELECT 
     id AS pedido_id,
