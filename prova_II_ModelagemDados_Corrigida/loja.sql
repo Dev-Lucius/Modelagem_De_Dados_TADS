@@ -14,7 +14,6 @@ CREATE TABLE produtos(
     id serial PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     preco NUMERIC(10,2) NOT NULL,
-    categoria VARCHAR(100) NOT NULL DEFAULT 'Variados'
 );
 
 CREATE TABLE pedidos(
